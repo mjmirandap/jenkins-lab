@@ -5,6 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Obteniendo el código del repositorio...'
+                git branch: 'main', url: 'https://github.com/mjmirandap/jenkins-lab'
+
             }
         }
         stage('Test') {
